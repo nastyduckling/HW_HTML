@@ -1,31 +1,208 @@
 .page-content {
+  display: flex;
+  justify-content: center;
   width: 1600px;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
 }
 
 .header {
   height: 80px;
   background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &-webstudio {
+    display: flex;
+    margin-left: 50px;
+  }
+  &-menu {
+    display: flex;
+    &-url {
+      font-size: 16px;
+      margin-right: 40px;
+    }
+    &-src {
+      color: black;
+      text-decoration: none;
+    }
+    &-src:hover {
+      color: #2196f3;
+    }
+  }
+  &-contacts {
+    display: flex;
+    font-size: 16px;
+    color: black;
+    &-email {
+      margin-right: 40px;
+      cursor: pointer;
+    }
+  }
+}
+.email-text:hover {
+  color: #2196f3;
+}
+.text-web {
+  font-size: 30px;
+  color: #2196f3;
+}
+.text-studio {
+  font-size: 30px;
 }
 
 .main-section1 {
   height: 600px;
   background-color: #2f303a;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+  }
+}
+
+.labelBisness {
+  font-size: 44px;
+  color: white;
+}
+.btn {
+  height: 50px;
+  width: 200px;
+  margin-top: 30px;
+  background-color: #2196f3;
+  border-radius: 4px;
+  &-text {
+    color: white;
+    font-size: 15px;
+  }
 }
 
 .main-section2 {
-  height: 250px;
+  height: 300px;
+}
+
+.discription {
+  display: flex;
+  align-items: center;
+  &-character {
+    width: 270px;
+    padding: 15px;
+  }
+}
+
+.character-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  &-text {
+    font-size: 14px;
+    color: #757575;
+  }
 }
 
 .main-section3 {
   height: 500px;
-  background-color: red;
+}
+
+.wath-we {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &-do {
+    display: flex;
+    &-text {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    &-img {
+      margin-right: 27px;
+    }
+  }
 }
 
 .main-section4 {
   height: 648;
+  background-color: #f5f4fa;
+}
+
+.ourTeam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px;
+  &-label {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  &-img {
+    display: flex;
+    margin-top: 50px;
+
+    width: 186px;
+    justify-content: center;
+    align-items: center;
+    &-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 368;
+      width: 260px;
+      margin: 10px;
+      &-name {
+        font-weight: bold;
+      }
+      &-work {
+        color: #757575;
+      }
+    }
+    &-text {
+      height: 108px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+    }
+  }
+}
+
+.img-team {
+  height: 245px;
+  //   width: 270;
 }
 
 .footer {
   height: 252px;
   background-color: #2f303a;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  &-content {
+    margin-left: 215px;
+    &-label {
+      display: flex;
+    }
+    &-contacts {
+      color: #757575;
+      font-size: 16px;
+    }
+    &-text {
+      margin-top: 10px;
+    }
+    &-adress {
+      color: white;
+    }
+  }
+}
+
+.text-studio-footer {
+  color: white;
+  font-size: 30px;
 }
